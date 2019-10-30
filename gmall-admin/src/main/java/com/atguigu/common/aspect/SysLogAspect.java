@@ -9,12 +9,12 @@
 package com.atguigu.common.aspect;
 
 import com.atguigu.common.annotation.SysLog;
+import com.atguigu.common.utils.HttpContextUtils;
 import com.atguigu.common.utils.IPUtils;
 import com.atguigu.modules.sys.entity.SysLogEntity;
 import com.atguigu.modules.sys.entity.SysUserEntity;
 import com.atguigu.modules.sys.service.SysLogService;
 import com.google.gson.Gson;
-import com.atguigu.common.utils.HttpContextUtils;
 import org.apache.shiro.SecurityUtils;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
