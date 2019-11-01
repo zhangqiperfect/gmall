@@ -1,6 +1,7 @@
 package com.atguigu.gmall.pms;
 
 import com.atguigu.gmall.pms.dao.BrandDao;
+import com.atguigu.gmall.pms.service.BrandService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -9,6 +10,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 class GmallPmsApplicationTests {
     @Autowired
     BrandDao brandDao;
+    @Autowired
+    BrandService brandService;
     @Test
     void contextLoads() {
     }
@@ -35,5 +38,6 @@ class GmallPmsApplicationTests {
 //        System.out.println(brandEntityIPage.getRecords());
 //        System.out.println(brandEntityIPage.getTotal());
 //        System.out.println(brandEntityIPage.getPages());
+
     }
 }

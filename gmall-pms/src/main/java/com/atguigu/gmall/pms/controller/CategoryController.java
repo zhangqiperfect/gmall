@@ -33,7 +33,6 @@ public class CategoryController {
     @GetMapping
     public Resp<List<CategoryEntity>> querycategory(@RequestParam(value="level",defaultValue ="0")Integer level,@RequestParam(value="parentCid",required = false)Long parentCid){
     List<CategoryEntity> categoryEntities=this.categoryService.querycategory(level,parentCid);
-
         return Resp.ok(categoryEntities);
     }
     /**
